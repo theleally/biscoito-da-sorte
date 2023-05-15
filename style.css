@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --ff-body: "Montserrat", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #190361 0%, #bb00ff 100%);
+
+  font-family: var(--ff-body);
+
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+}
+
+main {
+  background: #ffffff;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  padding: 4.8rem 6.4rem 6.4rem;
+}
+
+img {
+  width: 100%;
+}
+
+.screen1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30rem;
+  height: 31.2rem;
+}
+
+.screen1 h1 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  color: #34355b;
+  text-align: center;
+  margin-bottom: 1.4rem;
+}
+
+.screen1 p {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #34355b;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cookie {
+  cursor: pointer;
+}
+
+.screen2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30rem;
+  height: 46.8rem;
+}
+
+.screen2 h2 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  text-align: center;
+  color: #34355b;
+  margin-bottom: 1.7rem;
+}
+
+.screen2 .sorte {
+  width: 29.3rem;
+  height: 10.7rem;
+  background: #e4edf1;
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+  padding: 1rem;
+  margin-bottom: 1.7rem;
+}
+
+.screen2 .sorte p {
+  font-family: "Dancing Script";
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  text-align: center;
+
+  color: #000000;
+}
+
+.screen2 button {
+  margin-top: 1.7rem;
+  border: none;
+  padding: 1.6rem;
+  width: 17.4rem;
+  height: 5.2rem;
+
+  background: #ff9500;
+  border-radius: 0.4rem;
+
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes gradient {
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
+}
